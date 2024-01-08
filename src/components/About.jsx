@@ -6,8 +6,9 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
+import profilepic from "../assets/profilepic.jpg";
 
-const ServiceCard = ({ index, title, icon }) => (
+const ServiceCard = ({ index, title, description, icon }) => (
   <Tilt className="xs:w-[250px] w-full">
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
@@ -19,7 +20,7 @@ const ServiceCard = ({ index, title, icon }) => (
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+        className="bg-tertiary rounded-[20px] py-2 px-4 min-h-[250px] flex justify-evenly items-center flex-col"
       >
         <img
           src={icon}
@@ -30,6 +31,7 @@ const ServiceCard = ({ index, title, icon }) => (
         <h3 className="text-white text-[20px] font-bold text-center">
           {title}
         </h3>
+        <h3 className="text-white text-md text-center">{description}</h3>
       </div>
     </motion.div>
   </Tilt>
@@ -38,23 +40,34 @@ const ServiceCard = ({ index, title, icon }) => (
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
-      </motion.div>
+      <div className="flex gap-10 max-lg:flex-col">
+        <div className="pic lg:w-2/3 w-full flex justify-center">
+          <img
+            src={profilepic}
+            alt="Here"
+            className="rounded-xl border-l-indigo-500 border-l-8 "
+          />
+        </div>
+        <div>
+          <motion.div variants={textVariant()}>
+            <p className={styles.sectionSubText}>Introduction</p>
+            <h2 className={styles.sectionHeadText}>Overview.</h2>
+          </motion.div>
 
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
-      >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
-      </motion.p>
-
-      <div className="mt-20 flex flex-wrap gap-10">
+          <motion.p
+            variants={fadeIn("", "", 0.1, 1)}
+            className="mt-4 text-secondary text-[18px] max-w-3xl leading-[30px]"
+          >
+            I'm a skilled software developer with experience in Java and
+            JavaScript and expertise in frameworks like React, Redux, and
+            Three.js. I'm a quick learner and collaborate closely with the team
+            to create efficient, scalable, and user-friendly solutions that
+            solve real-world problems. Let's work together to bring your ideas
+            to life!
+          </motion.p>
+        </div>
+      </div>
+      <div className="mt-20 flex flex-wrap justify-evenly">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
