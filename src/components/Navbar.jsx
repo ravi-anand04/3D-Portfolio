@@ -36,7 +36,17 @@ const Navbar = () => {
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
-              <a href={`#${link.id}`}>{link.title}</a>
+              {link.id === "resume" ? (
+                <a
+                  href="/resume/Ravi's Resume (4).pdf"
+                  download="Ravi's Resume.pdf"
+                  target="_blank"
+                >
+                  {link.title}
+                </a>
+              ) : (
+                <a href={`#${link.id}`}>{link.title}</a>
+              )}
             </li>
           ))}
         </ul>

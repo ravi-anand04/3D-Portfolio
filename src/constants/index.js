@@ -24,6 +24,7 @@ import {
   tripguide,
   threejs,
 } from "../assets";
+import { beyoung, chess, moviedeck, portfolio } from "../assets/projects";
 
 export const navLinks = [
   {
@@ -141,9 +142,9 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: beyoung,
     source_code_link: "https://github.com/ravi-anand04/Beyoung-Clone",
-    live: "https://beyoung-store-clone.netlify.app/"
+    live: "https://beyoung-store-clone.netlify.app/",
   },
   {
     name: "3D Portfolio",
@@ -163,7 +164,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: portfolio,
     source_code_link: "https://github.com/ravi-anand04/3D-Portfolio",
   },
   {
@@ -184,7 +185,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: chess,
     source_code_link: "https://github.com/",
   },
   {
@@ -205,7 +206,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: moviedeck,
     source_code_link: "https://github.com/ravi-anand04/Movie-Deck",
   },
   // {
