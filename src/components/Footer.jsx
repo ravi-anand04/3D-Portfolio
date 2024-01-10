@@ -7,10 +7,12 @@ import { SectionWrapper } from "../hoc";
 import { favicon } from "../assets";
 const Footer = () => {
   return (
-    <div className="h-[200px] flex flex-col gap-6 items-center justify-center hover:bg-slate-800">
+    <div className="h-[240px] flex flex-col gap-6 items-center justify-center hover:bg-slate-800 delay-100 rounded-lg scroll-smooth shadow-card">
       <img src={favicon} alt="" />
       <h1 className="text-center text-xl w-full">
-        Living, learning, & leveling up one day at a time.
+        Living, learning, & leveling up
+        <br />
+        <span>one day at a time.</span>
       </h1>
       <div className="social-media flex justify-center items-center gap-4 flex-wrap text-4xl">
         <a
