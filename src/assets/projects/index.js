@@ -1,5 +1,5 @@
 import portfolio from "./portfolio.jpg";
-import beyoung from "./beyoung.png";
+import beyoung from "./beyoung.jpg";
 import chess from "./chess.jpg";
 import moviedeck from "./moviedeck.jpg";
 
