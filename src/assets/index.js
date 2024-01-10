@@ -30,7 +30,10 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import favicon from "./favicon.ico";
+
 export {
+  favicon,
   logo,
   backend,
   creator,
