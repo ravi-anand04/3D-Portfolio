@@ -22,9 +22,12 @@ const Hero = () => {
             <br className="sm:block hidden" />
             user interfaces and web applications
           </p>
+          <h1 className="text-4xl font-bold text-white absolute my-36 mx-24 max-sm:mx-0 max-sm:my-24">
+            Turning Ideas Into Beautifully Functional Designs"
+          </h1>
         </div>
       </div>
-      <ComputersCanvas />
+      {/* <ComputersCanvas /> */}
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">

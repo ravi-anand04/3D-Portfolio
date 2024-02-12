@@ -24,7 +24,13 @@ import {
   tripguide,
   threejs,
 } from "../assets";
-import { beyoung, chess, moviedeck, portfolio } from "../assets/projects";
+import {
+  beyoung,
+  chess,
+  moviedeck,
+  portfolio,
+  ticketCheckout,
+} from "../assets/projects";
 
 export const navLinks = [
   {
@@ -107,8 +113,9 @@ const experiences = [
     iconBg: "#383E56",
     date: "Jan 2022 - Dec 2023",
     points: [
-      "Developed and maintained web applications using React.js and other related technologies.",
-      "Collaborated with cross-functional teams including designers and other developers to build high-quality products.",
+      "Built UI components for events management and Goals feature using React.js",
+      "Implemented event register, waiting list, attendance and filter by date.",
+      "Enabled CRUD operations as well as validations check for Goals feature",
       "Ensured software integrity through regression testing and issue resolution.",
     ],
   },
@@ -119,10 +126,9 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Aug 2021 - Sep 2021",
     points: [
-      "Developed web applications using React.js and Ant Design",
-      "Built UI components of an admin panel and added filter and sort functionality",
-      "Implemented responsive design and ensuring cross-browser compatibility.",
-      "Participated in code reviews",
+      "Built an admin panel to manage product stocks, provide inventory updates, and filter operations.",
+      "Implemented responsive design and ensured cross-browser compatibility.",
+      "Also implemented pagination and lazy loading, which significantly improved the performance.",
     ],
   },
 ];
@@ -138,6 +144,10 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
+        name: "JavaScript",
+        color: "green-text-gradient",
+      },
+      {
         name: "Tailwind CSS",
         color: "pink-text-gradient",
       },
@@ -145,6 +155,49 @@ const projects = [
     image: beyoung,
     source_code_link: "https://github.com/ravi-anand04/Beyoung-Clone",
     live: "https://beyoung-store-clone.netlify.app/",
+  },
+  {
+    name: "Cleartrip Clone",
+    description:
+      "Developed a functional clone of Cleartrip.com, with flights/hotel search, and booking. Built infinte scroll, search autocomplete and sort, filter operations.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Ticket Checkout",
+    description:
+      "Crafted with React and styled with Tailwind CSS, this UI offers a seamless experience for users as they finalize their ticket purchases. The UI features responsive design.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "TailwindCSS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: ticketCheckout,
+    source_code_link: "https://github.com/ravi-anand04/TicketeCheckout",
+    live: "https://tickete-checkout.netlify.app/",
   },
   {
     name: "3D Portfolio",
@@ -166,27 +219,7 @@ const projects = [
     ],
     image: portfolio,
     source_code_link: "https://github.com/ravi-anand04/3D-Portfolio",
-  },
-  {
-    name: "Royal Chess",
-    description:
-      "Developed a web-based chess application focusing on the chess-playing experience. Added piece movement logic, current player and handled edge cases",
-    tags: [
-      {
-        name: "HTML",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "CSS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "JavaScript",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: chess,
-    source_code_link: "https://github.com/",
+    live: "https://ravi-anand04.netlify.app/",
   },
   {
     name: "Movie Deck",
@@ -208,28 +241,8 @@ const projects = [
     ],
     image: moviedeck,
     source_code_link: "https://github.com/ravi-anand04/Movie-Deck",
+    live: "https://tmdb-movie-deck.netlify.app/",
   },
-  // {
-  //   name: "Cleartrip Clone",
-  //   description:
-  //     "Developed a functional clone of Cleartrip.com, emulating its seamless travel booking experience. Implemented features like search, and booking.",
-  //   tags: [
-  //     {
-  //       name: "React",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "Redux",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "Tailwind",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: tripguide,
-  //   source_code_link: "https://github.com/",
-  // },
 ];
 
 export { services, technologies, experiences, projects };
