@@ -62,7 +62,7 @@ const services = [
     title: "UI Designer",
     icon: web,
     description:
-      "I value simple content structure, clean design patterns, and thoughtful interactions.",
+      "I value simple content structure, clean design patterns and thoughtful interactions.",
   },
 ];
 
