@@ -23,7 +23,7 @@ const Hero = () => {
             user interfaces and web applications
           </p>
           <h1 className="text-4xl font-bold text-white absolute my-36 mx-24 max-sm:mx-0 max-sm:my-24">
-            Turning Ideas Into Beautifully Functional Designs"
+            Transforming Vision Into Reality Through Design
           </h1>
         </div>
       </div>
