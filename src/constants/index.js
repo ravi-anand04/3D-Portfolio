@@ -175,7 +175,8 @@ const projects = [
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/ravi-anand04/ClearTrip-Clone",
+    live: "https://cleartrip-booking-clone.netlify.app/",
   },
   {
     name: "Ticket Checkout",
