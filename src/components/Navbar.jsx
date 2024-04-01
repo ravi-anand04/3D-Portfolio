@@ -38,8 +38,8 @@ const Navbar = () => {
             >
               {link.id === "resume" ? (
                 <a
-                  href="/resume/Ravi's Resume (4).pdf"
-                  download="Ravi's Resume.pdf"
+                  href="/resume/RaviAnand_FullStack_Developer.pdf"
+                  download="RaviAnand_FullStack_Developer.pdf"
                   target="_blank"
                 >
                   {link.title}

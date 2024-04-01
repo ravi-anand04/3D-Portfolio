@@ -27,6 +27,7 @@ import {
 import {
   beyoung,
   chess,
+  dreamcanvas,
   moviedeck,
   portfolio,
   ticketCheckout,
@@ -135,7 +136,28 @@ const experiences = [
 
 const projects = [
   {
-    name: "Beyoung Clone",
+    name: "Dream Canvas",
+    description: `Developed an AI image-enhancing app using Cloudinary AI for image transformation, and Clerk for user authentication. Introduced payments & credits system using Stripe`,
+    tags: [
+      {
+        name: "Next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "green-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: dreamcanvas,
+    source_code_link: "https://github.com/ravi-anand04/DreamCanvas",
+    live: "https://dream-canvas-psi.vercel.app/",
+  },
+  {
+    name: "Beyoung Store",
     description:
       "Crafted an eCommerce website clone inspired by Beyoung.in. Implemented login, product filter, add to cart and payment functionality.",
     tags: [
